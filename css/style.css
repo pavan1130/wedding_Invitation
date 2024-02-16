@@ -12,7 +12,7 @@
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
-
+  --body-color: hsl(var(--hue-color), 60%, 95%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -485,10 +485,10 @@ body {
 }
 body.light-mode {
   background-color: #fee2f8;
-  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+  background-image: linear-gradient(315deg, #fee2f8 0%, #f2f6f5 74%);
 }
 body.dark-mode {
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-image: linear-gradient(62deg, #dbdcdc 0%, #e0dee1 100%);
 }
 
 img {
