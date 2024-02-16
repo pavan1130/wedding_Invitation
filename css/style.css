@@ -7,13 +7,12 @@
   --hue-color: 250;
 
   /* HSL color mode */
-  --primary-color: hsl(var(--hue-color), 69%, 61%);
-  --primary-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
   --second-color: hsl(350, 43%, 43%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --body-color: hsl(var(--hue-color), 60%, 95%);
+
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -457,8 +456,16 @@ input {
 }
 
 .sakura {
-  /* background: -webkit-linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9));
-	background: linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)); */
+  background: -webkit-linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.9)
+  );
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.9)
+  );
   background: url(../assets/img/icons8-violet-flower-96.png);
   background-size: 100% 100%;
   pointer-events: none;
@@ -476,12 +483,10 @@ body {
   align-items: center;
   flex-direction: column;
 }
-
 body.light-mode {
   background-color: #fee2f8;
   background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
 }
-
 body.dark-mode {
   background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
@@ -520,6 +525,7 @@ img {
   top: 0;
   right: 0;
   display: block;
+  height: 15vh;
 }
 
 .top-left-decoration {
@@ -527,6 +533,7 @@ img {
   position: fixed;
   bottom: 0;
   left: 0;
+  height: 8vh;
   display: block;
   transform: rotate(-180deg);
 }
@@ -612,7 +619,7 @@ img {
   background-color: var(--primary-color);
   border-radius: 0.75rem;
   text-align: center;
-  color: #fff;
+  color: #000000;
   padding: 1rem 1.75rem;
   margin-right: 8px;
   font-weight: 600;
